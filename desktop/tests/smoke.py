@@ -122,7 +122,7 @@ def main() -> int:
         canvas = QPixmap(w.size())
         canvas.fill(QColor("#2B2F36") if dark else QColor("#D9DEE5"))
         p = QPainter(canvas)
-        w.render(p)
+        w.render(p, QPoint(0, 0))
         p.end()
         canvas.save(str(shots / f"panneau-{suffix}.png"))
         b = Bubble()
