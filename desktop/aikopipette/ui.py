@@ -323,8 +323,11 @@ class PaletteWindow(QWidget):
 def _clear(layout):
     while layout.count():
         item = layout.takeAt(0)
-        if item.widget():
-            item.widget().deleteLater()
+        w = item.widget()
+        if w:
+            w.hide()            # sinon l'ancien widget reste affiché un instant en haut à gauche
+            w.setParent(None)
+            w.deleteLater()
         elif item.layout():
             _clear(item.layout())
 

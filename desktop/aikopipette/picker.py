@@ -86,6 +86,8 @@ class _Overlay(QWidget):
             x = pos.x() - 22 - LOUPE
         if y + LOUPE + 44 > self.height():
             y = pos.y() - 22 - LOUPE - 34
+        x = min(max(x, 4), self.width() - LOUPE - 4)
+        y = min(max(y, 4), self.height() - LOUPE - 40)
         box = QRectF(x, y, LOUPE, LOUPE)
 
         p.setRenderHint(QPainter.RenderHint.Antialiasing)
