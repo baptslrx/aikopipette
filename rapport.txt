@@ -1,0 +1,25 @@
+This plugin does not support raise()
+This plugin does not support raise()
+This plugin does not support raise()
+This plugin does not support raise()
+This plugin does not support propagateSizeHints()
+== formats
+  ok   RGB
+  ok   HSL
+  ok   HEX
+== palette d'une image
+  palette : ['#7DC8FF', '#0A0A0C', '#F08C3C']
+  ok   couleurs principales dans l'ordre
+== pipette (loupe)
+  ok   couleur à gauche
+  ok   couleur à droite
+  ok   clic = couleur prise
+== raccourci
+  ok   relecture du raccourci
+  ok   raccourci par défaut Alt + C
+  enregistré : Ctrl + Maj + P
+  ok   la fenêtre enregistre Ctrl + Maj + P
+
+Captures : bulle-clair.png, bulle-sombre.png, fenetre-raccourci.png, loupe-clair.png, loupe-sombre.png, panneau-clair.png, panneau-sombre.png
+
+Tout est OK
