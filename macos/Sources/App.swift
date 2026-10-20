@@ -24,6 +24,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private var bubble: ColorBubble!
 
     func applicationDidFinishLaunching(_ notification: Notification) {
+        EditMenu.install(appName: "AikoPipette")
         store = ColorStore()
         bubble = ColorBubble()
 
